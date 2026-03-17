@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us | Blueprint Growth Co – Digital Marketing Agency Fort Worth TX</title>
+  <meta name="description" content="Contact Blueprint Growth Co, Fort Worth's small business digital marketing agency. Tell us about your business and book a free 30-minute growth strategy call with founder Jake DiNatale." />
+  <meta name="keywords" content="contact marketing agency Fort Worth TX, small business marketing consultation Fort Worth, free marketing strategy call Fort Worth, digital marketing agency Tarrant County TX" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.blueprintgrowthco.com/contact.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.blueprintgrowthco.com/contact.html" />
+  <meta property="og:title" content="Contact Blueprint Growth Co – Fort Worth Digital Marketing Agency" />
+  <meta property="og:description" content="Book a free 30-minute strategy call with Fort Worth's small business marketing experts. Local SEO, website design, social media & more." />
+  <meta property="og:image" content="https://www.blueprintgrowthco.com/assets/images/logo.png" />
+  <meta name="geo.region" content="US-TX" />
+  <meta name="geo.placename" content="Fort Worth, Texas" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.blueprintgrowthco.com/" },
+      { "@type": "ListItem", "position": 2, "name": "Contact", "item": "https://www.blueprintgrowthco.com/contact.html" }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Blueprint Growth Co",
+    "description": "Fort Worth digital marketing agency for small businesses. Local SEO, website design, social media management, and automated customer outreach in Tarrant County, TX.",
+    "url": "https://www.blueprintgrowthco.com",
+    "telephone": "+1-978-806-6103",
+    "email": "jake@blueprintgrowthco.com",
+    "address": { "@type": "PostalAddress", "addressLocality": "Fort Worth", "addressRegion": "TX", "addressCountry": "US" },
+    "geo": { "@type": "GeoCoordinates", "latitude": 32.7555, "longitude": -97.3308 },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+1-978-806-6103",
+      "contactType": "customer service",
+      "email": "jake@blueprintgrowthco.com",
+      "availableLanguage": "English"
+    },
+    "hasMap": "https://www.google.com/maps/place/Fort+Worth,+TX"
+  }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="contact-page">
+
+<!-- NAV -->
+<nav id="mainNav">
+  <a href="index.html" class="nav-logo">
+    <img src="assets/images/logo.png" alt="Blueprint Growth Co" />
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="index.html#services">Services</a></li>
+    <li><a href="services.html">Pricing</a></li>
+    <li><a href="contact.html" class="btn-nav">Contact Us</a></li>
+  </ul>
+  <button class="hamburger" aria-label="Open menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+  <div class="mobile-menu" id="mobileMenu" role="navigation">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="index.html#services">Services</a>
+    <a href="services.html">Pricing</a>
+    <a href="contact.html">Contact Us</a>
+  </div>
+</nav>
+
+<!-- PAGE HERO -->
+<div class="page-hero">
+  <span class="eyebrow">Fort Worth Digital Marketing Agency</span>
+  <h1>Contact Blueprint Growth Co</h1>
+  <p>Tell us about your Fort Worth business and your goals. Jake will personally be in touch within one business day.</p>
+</div>
+
+<!-- MAIN -->
+<main>
+  <div class="contact-wrap">
+
+    <!-- FORM -->
+    <div class="form-card">
+      <h2>Send Us a Message</h2>
+      <p class="sub">Fill out the form below and Jake will personally reach out to you.</p>
+
+      <!--
+        TO ENABLE FORM SUBMISSIONS:
+        Option A – Netlify: add  data-netlify="true"  to the <form> tag and deploy to Netlify.
+        Option B – Formspree: change action to "https://formspree.io/f/YOUR_ID" and method="POST".
+        Option C – Mailto fallback is active by default below.
+      -->
+      <form id="contactForm" onsubmit="handleSubmit(event)">
+        <div class="field-row">
+          <div class="field">
+            <label for="firstName">First Name *</label>
+            <input type="text" id="firstName" name="firstName" placeholder="Jane" required />
+          </div>
+          <div class="field">
+            <label for="lastName">Last Name *</label>
+            <input type="text" id="lastName" name="lastName" placeholder="Smith" required />
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="email">Email Address *</label>
+          <input type="email" id="email" name="email" placeholder="jane@yourbusiness.com" required />
+        </div>
+
+        <div class="field">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone" placeholder="(817) 555-0100" />
+        </div>
+
+        <div class="field">
+          <label for="business">Business Name</label>
+          <input type="text" id="business" name="business" placeholder="Your Business LLC" />
+        </div>
+
+        <div class="field">
+          <label for="hearAbout">How did you hear about us?</label>
+          <select id="hearAbout" name="hearAbout">
+            <option value="" disabled selected>Select an option…</option>
+            <option>Google Search</option>
+            <option>Social Media</option>
+            <option>Referral from a friend</option>
+            <option>Networking event</option>
+            <option>Other</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label>Services You're Interested In</label>
+          <div class="checkbox-group">
+            <label class="checkbox-label">
+              <input type="checkbox" name="services" value="Customer Outreach & Retention" />
+              Customer Outreach &amp; Retention
+            </label>
+            <label class="checkbox-label">
+              <input type="checkbox" name="services" value="Website Creation & SEO" />
+              Website Creation &amp; SEO
+            </label>
+            <label class="checkbox-label">
+              <input type="checkbox" name="services" value="Social Media Management" />
+              Social Media Management
+            </label>
+            <label class="checkbox-label">
+              <input type="checkbox" name="services" value="Not sure yet" />
+              Not sure yet — I'd like to learn more
+            </label>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="message">Tell Us About Your Business *</label>
+          <textarea id="message" name="message" placeholder="Share a bit about your business, your goals, and any challenges you're facing…" required></textarea>
+        </div>
+
+        <button type="submit" class="btn-submit">Send Message →</button>
+        <div class="success-msg" id="successMsg">
+          ✓ &nbsp; Thanks! We've received your message and will be in touch within one business day.
+        </div>
+      </form>
+    </div>
+
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+      <div class="info-card">
+        <h3>Contact Information</h3>
+        <div class="info-item">
+          <div class="info-icon">
+            <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </div>
+          <div class="info-item-text">
+            <strong>Email</strong>
+            <a href="mailto:jake@blueprintgrowthco.com">jake@blueprintgrowthco.com</a>
+          </div>
+        </div>
+        <div class="info-item">
+          <div class="info-icon">
+            <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.42 2 2 0 0 1 3.6 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.59a16 16 0 0 0 6 6l.96-.96a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          </div>
+          <div class="info-item-text">
+            <strong>Phone</strong>
+            <a href="tel:9788066103">(978) 806-6103</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="booking-card">
+        <h3>Prefer to Talk Directly?</h3>
+        <p>Book a free 30-minute strategy call and let's map out a growth plan for your business.</p>
+        <a
+          href="https://calendly.com/jacobadinatale/30min"
+          target="_blank"
+          rel="noopener"
+          class="btn-book"
+        >
+          Book a Free Strategy Call →
+        </a>
+      </div>
+    </div>
+
+  </div>
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <p>
+    &copy; 2026 Blueprint Growth Co &nbsp;·&nbsp; Fort Worth, TX
+    &nbsp;·&nbsp; <a href="mailto:jake@blueprintgrowthco.com">jake@blueprintgrowthco.com</a>
+  </p>
+</footer>
+
+<script src="js/main.js"></script>
+
+</body>
+</html>
