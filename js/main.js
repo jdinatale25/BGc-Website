@@ -71,15 +71,37 @@ function toggleFaq(btn) {
 
 /* ── CONTACT FORM ── */
 function handleSubmit(e) {
-  e.preventDefault();
   const form = e.target;
-  const data = new FormData(form);
+  const action = form.getAttribute('action') || '';
 
-  // Collect checked services
+  // If Formspree is configured, let the native POST go through
+  if (action.includes('formspree.io') && !action.includes('YOUR_FORMSPREE_ID')) {
+    // Formspree will handle it — just show success after a short delay
+    e.preventDefault();
+    fetch(action, {
+      method: 'POST',
+      body: new FormData(form),
+      headers: { 'Accept': 'application/json' }
+    }).then(res => {
+      if (res.ok) {
+        form.reset();
+        const successMsg = document.getElementById('successMsg');
+        if (successMsg) successMsg.style.display = 'block';
+      } else {
+        alert('Something went wrong. Please email jake@blueprintgrowthco.com directly.');
+      }
+    }).catch(() => {
+      alert('Something went wrong. Please email jake@blueprintgrowthco.com directly.');
+    });
+    return;
+  }
+
+  // Mailto fallback — used until Formspree ID is configured
+  e.preventDefault();
+  const data = new FormData(form);
   const services = [...form.querySelectorAll('input[name="services"]:checked')]
     .map(cb => cb.value).join(', ') || 'None selected';
 
-  // Build mailto body as fallback
   const body = [
     `First Name: ${data.get('firstName')}`,
     `Last Name: ${data.get('lastName')}`,
@@ -95,15 +117,9 @@ function handleSubmit(e) {
 
   const subject = encodeURIComponent(`New Inquiry from ${data.get('firstName')} ${data.get('lastName')}`);
   const bodyEncoded = encodeURIComponent(body);
-
-  // Open mailto — replace with Netlify/Formspree for a true backend submission
   window.location.href = `mailto:jake@blueprintgrowthco.com?subject=${subject}&body=${bodyEncoded}`;
 
-  // Show success message
   form.reset();
   const successMsg = document.getElementById('successMsg');
-  if (successMsg) {
-    successMsg.style.display = 'block';
-  }
-  window.scrollTo({ top: 0, behavior: 'smooth' });
+  if (successMsg) successMsg.style.display = 'block';
 }

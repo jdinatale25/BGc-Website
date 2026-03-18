@@ -350,7 +350,7 @@ section {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 28px;
-  align-items: start;
+  align-items: stretch;
 }
 
 /* ── PRICING CARD ── */
@@ -362,6 +362,12 @@ section {
   position: relative;
   transition: transform .25s, box-shadow .25s, border-color .3s;
   box-shadow: 0 4px 24px rgba(13,27,42,.07);
+  display: flex;
+  flex-direction: column;
+}
+
+.price-card .btn-card {
+  margin-top: auto;
 }
 
 .price-card:hover {
