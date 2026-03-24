@@ -12,18 +12,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <title>About Us | Blueprint Growth Marketing – Digital Marketing Agency Fort Worth TX</title>
-  <meta name="description" content="Learn about Blueprint Growth Marketing, a Fort Worth-based digital marketing agency dedicated to helping small businesses grow through local SEO, website design, social media management, and customer outreach." />
-  <meta name="keywords" content="Blueprint Growth Marketing, digital marketing agency Fort Worth, small business marketing Fort Worth, local SEO Fort Worth, marketing consultant Fort Worth Texas" />
+  <meta name="description" content="Learn about Blueprint Growth Marketing, a Fort Worth-based digital marketing agency dedicated to helping local businesses grow through local SEO, website design, social media management, and customer outreach." />
+  <meta name="keywords" content="Blueprint Growth Marketing, digital marketing agency Fort Worth, local business marketing Fort Worth, local SEO Fort Worth, marketing consultant Fort Worth Texas" />
   <meta name="author" content="Jake DiNatale, Blueprint Growth Marketing" />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://www.blueprintgrowthco.com/about.html" />
   <meta name="geo.region" content="US-TX" />
   <meta name="geo.placename" content="Fort Worth, Texas" />
   <meta name="geo.position" content="32.7555;-97.3308" />
+  <meta name="ICBM" content="32.7555, -97.3308" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://www.blueprintgrowthco.com/about.html" />
   <meta property="og:title" content="About Blueprint Growth Marketing – Fort Worth Digital Marketing Agency" />
-  <meta property="og:description" content="Fort Worth digital marketing agency helping small businesses grow. Meet the team behind Blueprint Growth Marketing." />
+  <meta property="og:description" content="Fort Worth digital marketing agency helping local businesses grow. Meet the team behind Blueprint Growth Marketing." />
   <meta property="og:image" content="https://www.blueprintgrowthco.com/assets/images/logo.png" />
   <meta property="og:site_name" content="Blueprint Growth Marketing" />
 
@@ -42,7 +43,7 @@
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "Blueprint Growth Marketing",
-    "description": "Fort Worth digital marketing agency for small businesses. Founded by Jake DiNatale, we focus on local SEO, website design, social media management, and automated customer outreach.",
+    "description": "Fort Worth digital marketing agency for local businesses. Founded by Jake DiNatale, we focus on local SEO, website design, social media management, and automated customer outreach.",
     "url": "https://www.blueprintgrowthco.com",
     "telephone": "+1-978-806-6103",
     "email": "jake@blueprintgrowthco.com",
@@ -55,6 +56,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="icon" href="assets/images/logo.png" type="image/png">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -67,7 +69,7 @@
 
 <a href="https://calendly.com/jacobadinatale/30min" target="_blank" rel="noopener" id="float-cta">
   <svg viewBox="0 0 24 24"><path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01"/></svg>
-  Book Free Strategy Call
+  Get Free Growth Plan
 </a>
 
 <!-- ══ NAV ══ -->
@@ -78,8 +80,15 @@
   <ul class="nav-links">
     <li><a href="index.html">Home</a></li>
     <li><a href="about.html" class="active">About</a></li>
-    <li><a href="index.html#services">Services</a></li>
-    <li><a href="services.html">Pricing</a></li>
+    <li class="has-dropdown">
+      <a tabindex="0">Services</a>
+      <ul class="nav-dropdown">
+        <li><a href="website-design.html">Website Design</a></li>
+        <li><a href="seo.html">Search Engine Optimization (SEO)</a></li>
+        <li><a href="customer-outreach.html">Customer Outreach</a></li>
+        <li><a href="social-media.html">Social Media</a></li>
+      </ul>
+    </li>
     <li><a href="contact.html" class="btn-nav">Contact Us</a></li>
   </ul>
   <button class="hamburger" aria-label="Open menu" aria-expanded="false">
@@ -88,8 +97,11 @@
   <div class="mobile-menu" id="mobileMenu" role="navigation">
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
-    <a href="index.html#services">Services</a>
-    <a href="services.html">Pricing</a>
+    <span class="mobile-menu-label">Services</span>
+    <a href="website-design.html" class="mobile-sub">Website Design</a>
+    <a href="seo.html" class="mobile-sub">Search Engine Optimization (SEO)</a>
+    <a href="customer-outreach.html" class="mobile-sub">Customer Outreach</a>
+    <a href="social-media.html" class="mobile-sub">Social Media</a>
     <a href="contact.html">Contact Us</a>
   </div>
 </nav>
@@ -98,6 +110,7 @@
 <section class="about-hero" id="top">
   <div class="page-hero-inner">
     <h1>About Blueprint Growth Marketing</h1>
+    <p>A Fort Worth marketing company built by someone who came from data and finance — not advertising.</p>
   </div>
 </section>
 
@@ -106,7 +119,7 @@
   <div class="about-section-inner">
     <h2>Our Story</h2>
     <p>Blueprint Growth Marketing grew out of a genuine interest in how business systems work and what's possible when automation is set up correctly. Jake has spent his career building data pipelines and automated workflows, and that same mindset shapes how he approaches marketing.</p>
-    <p>The tools that help larger organizations run well, like automated communication, structured reporting, and data-backed decision-making, work just as well for a local service business. Blueprint Growth Marketing exists to build those systems for Fort Worth small businesses.</p>
+    <p>The tools that help larger organizations run well, like automated communication, structured reporting, and data-backed decision-making, work just as well for a local service business. Blueprint Growth Marketing exists to build those systems for Fort Worth local businesses.</p>
     <p>No long-term contracts. No surprise fees. If it's not working, you walk. That's the deal.</p>
   </div>
 </section>
@@ -114,15 +127,14 @@
 <!-- ══ MEET THE FOUNDER ══ -->
 <section class="about-section about-section-alt">
   <div class="about-section-inner">
-    <h2>The Founder</h2>
-
     <div class="founder-wrap reveal">
       <img src="assets/images/jake.jpg" alt="Jake DiNatale, Founder of Blueprint Growth Marketing" class="founder-img" />
       <div class="founder-bio">
+        <span class="founder-eyebrow">The Founder</span>
         <h3>Jake DiNatale</h3>
         <p class="founder-title">Founder, Blueprint Growth Marketing</p>
         <p>Jake grew up in Boston and moved to Fort Worth in 2018 to attend TCU, where he graduated from AddRan College of Liberal Arts with a degree in Economics. He's spent the years since building data pipelines, automating financial workflows, and delivering analytics for some of the largest financial institutions in Texas.</p>
-        <p>He started Blueprint Growth Marketing to bring that same systematic, results-driven approach to a different problem: helping Fort Worth small businesses grow online without paying enterprise agency prices.</p>
+        <p>He started Blueprint Growth Marketing to take that same thinking and apply it somewhere it was clearly missing: helping Fort Worth local businesses grow online without paying agency prices to do it.</p>
         <p>Outside of work, Jake is a Brazilian jiu-jitsu practitioner and coach. It's a discipline that, not unlike building a business, rewards patience, consistency, and knowing when to apply pressure.</p>
       </div>
     </div>
@@ -136,22 +148,19 @@
     <p style="margin-bottom: 56px;">These three principles guide everything we do at Blueprint Growth Marketing.</p>
 
     <div class="values-grid">
-      <!-- Transparency -->
       <div class="value-card reveal">
-        <h3>Transparency</h3>
-        <p>No hidden fees. No corporate jargon. No BS. You always know what you're paying for and how your marketing dollars are being spent. We give you honest recommendations, even if they don't maximize our revenue.</p>
+        <h3>You Work With Jake, Not an Account Manager</h3>
+        <p>At a traditional agency, the person who sold you the contract is never the person doing the work. Here, Jake handles the strategy, the execution, and the reporting. You have direct access to the person who actually knows your business.</p>
       </div>
 
-      <!-- Results -->
       <div class="value-card reveal reveal-delay-1">
-        <h3>Results</h3>
-        <p>We focus on results you can actually point to. Higher search rankings, more leads coming in, social content that grows your audience. We set clear goals upfront and report honestly on how things are moving. If something isn't working, we tell you.</p>
+        <h3>Built on Systems, Not Gut Feelings</h3>
+        <p>Most marketing decisions get made based on what looks good or what someone read in a blog post. Jake's background is in data pipelines and financial analytics — every recommendation we make is based on what the numbers show, not what sounds right.</p>
       </div>
 
-      <!-- Local Focus -->
       <div class="value-card reveal reveal-delay-2">
-        <h3>Local Focus</h3>
-        <p>Fort Worth businesses need strategies built for Fort Worth. We understand your market, your competition, and your customers. We work with you as a partner, not a distant vendor.</p>
+        <h3>No Contracts, No Surprises</h3>
+        <p>We don't lock you in because we don't think we need to. If the work isn't producing results, you should be able to leave — and we should have to earn your business every month. That's how we structure every engagement.</p>
       </div>
     </div>
   </div>
@@ -160,16 +169,19 @@
 <!-- ══ CTA STRIP ══ -->
 <section class="cta-strip">
   <h2 class="reveal">Ready to Work with Us?</h2>
-  <p class="reveal">Let's talk about how Blueprint Growth Marketing can help your Fort Worth business grow. Book a free 30-minute strategy call with Jake today.</p>
+  <p class="reveal">Spend 30 minutes with Jake and walk away with a clear picture of what's holding your business back online — and a specific plan to fix it.</p>
   <div class="cta-strip-btns reveal">
-    <a href="https://calendly.com/jacobadinatale/30min" target="_blank" rel="noopener" class="btn-primary">Book a Free Strategy Call →</a>
+    <a href="https://calendly.com/jacobadinatale/30min" target="_blank" rel="noopener" class="btn-primary">Get Your Free Growth Plan →</a>
     <a href="contact.html" class="btn-ghost">Send Us a Message</a>
   </div>
 </section>
 
 <!-- ══ FOOTER ══ -->
 <footer>
-  <p>&copy; 2026 Blueprint Growth Marketing &nbsp;·&nbsp; Digital Marketing Agency – Fort Worth, TX &nbsp;·&nbsp; <a href="mailto:jake@blueprintgrowthco.com">jake@blueprintgrowthco.com</a></p>
+  <p>&copy; 2026 Blueprint Growth Marketing &nbsp;·&nbsp; Digital Marketing Agency – Fort Worth, TX &nbsp;·&nbsp; <a href="tel:9788066103">(978) 806-6103</a> &nbsp;·&nbsp; <a href="mailto:jake@blueprintgrowthco.com">jake@blueprintgrowthco.com</a></p>
+  <a href="https://www.instagram.com/blueprintgrowthfw/" target="_blank" rel="noopener" class="footer-instagram" aria-label="Blueprint Growth Marketing on Instagram">
+    <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+  </a>
 </footer>
 
 <script src="js/main.js"></script>

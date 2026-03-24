@@ -1,0 +1,12 @@
+# OS
+.DS_Store
+
+# Editor
+.vscode/
+
+# Sensitive data
+*.xlsx
+*.csv
+
+# Claude Code
+.claude/
