@@ -113,12 +113,14 @@ nav.scrolled {
 
 .nav-logo img {
   height: 58px;
+  width: auto;
   display: block;
   transition: height .3s;
 }
 
 nav.scrolled .nav-logo img {
   height: 46px;
+  width: auto;
 }
 
 .nav-links {
@@ -1925,6 +1927,7 @@ body.contact-page {
 
 .founder-img {
   width: 100%;
+  height: auto;
   border-radius: 12px;
   object-fit: cover;
   aspect-ratio: 3/4;
